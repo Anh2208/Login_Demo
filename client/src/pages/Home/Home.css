@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.container a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    gap: 10px;
+    margin: auto;
+    padding: 10px;
+}
+
+button {
+    border: none;
+    background: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
