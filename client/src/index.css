@@ -9,6 +9,14 @@ body {
   color: #eee;
 }
 
+.login {
+  padding: 2.5rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
 .login form {
   display: flex;
   gap: 20px;
@@ -29,6 +37,13 @@ body {
   text-align: center;
 }
 
+.signup {
+  padding: 2.5rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
 
 .signup form {
   display: flex;

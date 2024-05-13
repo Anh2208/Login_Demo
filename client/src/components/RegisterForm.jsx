@@ -56,7 +56,6 @@ const RegisterForm = () => {
                         <div className='icon' onClick={() => setShowPassword((prev) => !prev)}>
                             {showPassword ? (
                                 <FaEyeSlash />
-
                             ) : (
                                 <FaEye />
                             )}

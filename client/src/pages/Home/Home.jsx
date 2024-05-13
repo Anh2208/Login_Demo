@@ -7,8 +7,9 @@ import { AuthContext } from '../../context/authContext/AuthContext';
 const Home = () => {
 
     return (
-        <div className='container'>
-            <div>Welcome to HomePage</div>
+        <div className='container home'>
+            <h2>Home Page</h2>
+            <p>Hello Everyone</p>
         </div>
     );
 }

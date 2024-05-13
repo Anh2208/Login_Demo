@@ -1,10 +1,10 @@
-import AuthReducer from "./AuthReducer";
 import { createContext, useEffect, useReducer } from "react";
 import CryptoJS from "crypto-js";
+import AuthReducer from "./AuthReducer";
 import { getUser } from "../../utils/action";
 
 const INITIAL_STATE = {
-    user: getUser() || null,
+    user: getUser(),
     loading: false,
     error: null,
 };
@@ -19,7 +19,7 @@ export const AuthContextProvider = ({ children }) => {
     // }, [state.user]);
     useEffect(() => {
         if (state.user != null) {
-            const encryptedUser = CryptoJS.AES.encrypt(JSON.stringify(state.user), 'srceret').toString();
+            const encryptedUser = CryptoJS.AES.encrypt(JSON.stringify(state.user), import.meta.env.VITE_APP_SECRET_KEY).toString();
             localStorage.setItem("user", encryptedUser);
         } else {
             localStorage.setItem("user", null);

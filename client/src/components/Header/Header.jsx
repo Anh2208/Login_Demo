@@ -33,7 +33,7 @@ const Header = () => {
     }
 
     return (
-        <div className='container'>
+        <div className='header'>
             <nav>
                 <a href="/">HomePage</a>
                 {user ? <a href="/profile">Profile</a> : null}
