@@ -1,4 +1,5 @@
-﻿# Login_Demo use React Nodejs and MySQL(xampp) database to create a login form 
+﻿# Login_Demo
+ Desc: use React Nodejs and MySQL(xampp) database to create a login form 
 #Step
 server : 
 1. run 'npm i'
