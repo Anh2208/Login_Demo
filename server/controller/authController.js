@@ -43,7 +43,7 @@ export const login = async (req, res) => {
         );
 
         if (existingUsers.length === 0) {
-            // connection.release();
+
             res.status(401).json({ message: "Email or Password incorrect" });
             return;
         }
@@ -55,12 +55,10 @@ export const login = async (req, res) => {
             existingUsers[0].accessToken = accessToken;
 
             const { id, password, ...user } = existingUsers[0];
-            // connection.release();
 
             res.cookie('accessToken', accessToken, { httpOnly: true })
             res.status(200).json({ message: "Login successfully", user: user });
         } else {
-            // connection.release();
             res.status(401).json({ message: "Email or Password incorrect" });
         }
 

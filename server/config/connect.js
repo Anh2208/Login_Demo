@@ -1,6 +1,7 @@
 import mysql from "mysql2/promise";
 
 let pool;
+
 export const createPool = async () => {
     if (!pool) {
         pool = mysql.createPool({

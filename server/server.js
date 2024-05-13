@@ -1,11 +1,11 @@
 import express from "express";
-import dotenv from "dotenv";
 import cors from "cors";
+import dotenv from "dotenv";
 import bodyParser from 'body-parser';
 import cookieParser from "cookie-parser";
 
-import authRouter from "./router/auth.js"
 import { User } from "./model/user.js";
+import authRouter from "./router/auth.js"
 
 dotenv.config();
 const app = express();
