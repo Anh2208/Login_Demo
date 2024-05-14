@@ -62,7 +62,7 @@ const RegisterForm = () => {
                 </div>
             </div>
             <div className='form-control'>
-                <label htmlFor="role">Role :</label>
+                <label htmlFor="role">Role : (Used during demo)</label>
                 <select id="role" onChange={(e) => setRole(e.target.value)}>
                     <option value="0">User</option>
                     <option value="1">Admin</option>
