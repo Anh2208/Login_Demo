@@ -43,29 +43,27 @@ const LoginForm = () => {
     };
 
     return (
-        <>
-            <form onSubmit={submitHandle}>
-                <div className='form-control'>
-                    <label htmlFor="email">Email :</label>
-                    <input type="text" id="email" placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
-                </div>
-                <div className='form-control'>
-                    <label htmlFor="password">Password :</label>
-                    <div className='input'>
-                        <input type={showPassword ? 'text' : 'password'} id="password" placeholder='*******' onChange={(e) => setPassword(e.target.value)} />
-                        <div className='icon' onClick={() => setShowPassword((prev) => !prev)}>
-                            {showPassword ? (
-                                <FaEyeSlash />
+        <form onSubmit={submitHandle}>
+            <div className='form-control'>
+                <label htmlFor="email">Email :</label>
+                <input type="text" id="email" placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
+            </div>
+            <div className='form-control'>
+                <label htmlFor="password">Password :</label>
+                <div className='input'>
+                    <input type={showPassword ? 'text' : 'password'} id="password" placeholder='*******' onChange={(e) => setPassword(e.target.value)} />
+                    <div className='icon' onClick={() => setShowPassword((prev) => !prev)}>
+                        {showPassword ? (
+                            <FaEyeSlash />
 
-                            ) : (
-                                <FaEye />
-                            )}
-                        </div>
+                        ) : (
+                            <FaEye />
+                        )}
                     </div>
                 </div>
-                <button type='submit'>SignIn</button>
-            </form>
-        </>
+            </div>
+            <button type='submit'>SignIn</button>
+        </form>
     )
 }
 
